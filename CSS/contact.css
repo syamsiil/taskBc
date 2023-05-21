@@ -49,6 +49,7 @@ header {
 
 .navbar a:hover {
   color: orangered;
+  transition: 0.5s;
 }
 
 .navbar li .active {
@@ -67,9 +68,9 @@ header {
 }
 
 .header-contact a:hover {
-  color: black;
-  background-color: white;
-  border: 1px solid black;
+  color: white;
+  background-color: orangered;
+  transition: 0.5s;
 }
 
 /* Form */
@@ -117,6 +118,7 @@ textarea {
 
 button {
   margin-top: 20px;
+  margin-bottom: 15px;
   color: #fff;
   background-color: black;
   font-size: 15px;
@@ -128,7 +130,21 @@ button {
 }
 
 button:hover {
-  color: black;
-  background-color: white;
-  border: 1px solid black;
+  color: white;
+  background-color: orangered;
+  transition: 0.5s;
+}
+
+/* Footer */
+footer {
+  padding: 15px;
+  text-align: center;
+  background-color: #0e5c6a;
+  justify-content: center;
+}
+
+footer p {
+  text-align: center;
+  color: white;
+  font-size: 14px;
 }
