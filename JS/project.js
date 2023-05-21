@@ -34,10 +34,10 @@ function projectCard(event) {
     endDate,
     description,
     image,
-    reactJsIcon,
-    javaScriptIcon,
-    nodeJsIcon,
-    css3Icon,
+    reactJsIconDecide,
+    javaScriptIconDecide,
+    nodeJsIconDecide,
+    css3IconDecide,
   };
 
   projectCardData.push(previewCard);
@@ -51,33 +51,33 @@ function renderCard() {
 
   for (let index = 0; index < projectCardData.length; index++) {
     document.getElementById("contents").innerHTML += `
-    <div class="card-box">
-        <img src="${projectCardData[index].image}" alt="" class="card-img" />
+        <div class="card-box">
+            <img src="${projectCardData[index].image}" alt="" class="card-img" />
 
-        <a href="project-detail.html" class="card-title"
-            >${projectCardData[index].projectName}
-        </a>
-        <span class="card-time">${projectCardData[index].starDate} until ${projectCardData[index].endDate}</span>
-        <p class="card-description">
-            ${projectCardData[index].description}
-        </p>
+            <a href="project-detail.html" class="card-title"
+                >${projectCardData[index].projectName}
+            </a>
+            <span class="card-time">${projectCardData[index].starDate} until ${projectCardData[index].endDate}</span>
+            <p class="card-description">
+                ${projectCardData[index].description}
+            </p>
 
-        <div class="card-app">
-            ${projectCardData[index].reactJsIcon}
-            ${projectCardData[index].javaScriptIcon}
-            ${projectCardData[index].nodeJsIcon}
-            ${projectCardData[index].css3Icon}
-    </div>
+            <div class="card-app">
+                ${projectCardData[index].reactJsIconDecide}
+                ${projectCardData[index].javaScriptIconDecide}
+                ${projectCardData[index].nodeJsIconDecide}
+                ${projectCardData[index].css3IconDecide}
+            </div>
 
-    <div class="card-btn">
-      <div class="card-btn-detail">
-        <button type="button" id="edit-card-button">Edit</button>
-      </div>
-      <div class="card-btn-detail">
-        <button type="button" id="delete-card-button">Delete</button>
-      </div>
-    </div>
-  </div>
+            <div class="card-btn">
+                <div class="card-btn-detail">
+                    <button type="button" id="edit-card-button">Edit</button>
+                </div>
+                <div class="card-btn-detail">
+                    <button type="button" id="delete-card-button">Delete</button>
+                </div>
+            </div>
+        </div>
     `;
   }
 }
