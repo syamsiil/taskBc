@@ -1,0 +1,358 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #e3e7eb;
+}
+
+section {
+  width: 50%;
+  /* padding: 0 10%; */
+  margin: auto;
+  padding-bottom: 40px;
+}
+
+img {
+  width: 100%;
+}
+
+/* Header  */
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f4f3f3;
+  padding: 5px 5%;
+}
+
+.header-left {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  padding: 10px 20px;
+  color: black;
+  font-size: 16px;
+  font-weight: 450;
+}
+
+.navbar a:hover {
+  color: orangered;
+}
+
+.navbar li .active {
+  font-weight: 700;
+}
+
+.logo {
+  padding: 10px 20px 10px 0;
+}
+
+.header-contact a {
+  padding: 5px 20px;
+  color: white;
+  background-color: black;
+  border-radius: 10px;
+}
+
+.header-contact a:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+
+/* Form  Add Project*/
+.heading {
+  text-align: center;
+  margin-top: 60px;
+  padding: 50px;
+}
+
+.form {
+  background-color: white;
+  padding: 40px;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 0 5px rgb(183, 181, 181);
+}
+
+form label {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+form div {
+  margin-top: 15px;
+}
+
+input,
+textarea {
+  background-color: #ffffff;
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 0 5px rgb(183, 181, 181);
+}
+
+.form-date {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 0;
+}
+
+#input-description {
+  height: 100px;
+}
+
+.checkbox-group {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 10px;
+}
+
+.checkbox-group-detail {
+  display: flex;
+  margin-top: 0;
+  padding-bottom: 10px;
+}
+
+.checkbox-group-detail input {
+  width: 20px;
+  margin-right: 10px;
+  box-shadow: none;
+}
+
+.checkbox-group-detail label {
+  color: #807c7c;
+}
+
+.input-image {
+  border: 1px solid #dbdbdb;
+  border-radius: 5px;
+}
+
+.input-image label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.input-image label p {
+  width: 25%;
+  background-color: #b1afaf;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+}
+
+.input-image label i {
+  padding: 15px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.button-group {
+  text-align: end;
+}
+
+button {
+  margin-top: 20px;
+  color: #fff;
+  background-color: black;
+  font-size: 15px;
+  padding: 5px 30px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
+  text-align: end;
+}
+
+button:hover {
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+}
+
+/* My Project */
+.myproject {
+  width: 100%;
+  background-color: white;
+}
+
+.card-container {
+  display: grid;
+  /* width: 450px; */
+  grid-template-columns: repeat(auto-fit, minmax(270px, auto));
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 0 5%;
+}
+
+.card-box {
+  background: rgb(255, 255, 255);
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 0.5rem;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: initial;
+  object-position: center;
+  border-radius: 0.5rem;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(0, 0, 0);
+  /* To Remain Title In 2 lines*/
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.card-time {
+  display: flex;
+  font-size: 0.9rem;
+}
+
+.card-description {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  margin-top: 20px;
+  /* To Remain Description In 3 lines*/
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.card-app {
+  margin: 20px 0 20px;
+}
+
+.card-btn {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px;
+}
+
+#edit-card-button {
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+}
+
+#delete-card-button {
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+}
+
+/* Project detail */
+/* About */
+#project-detail {
+  width: 90%;
+  margin: auto;
+}
+
+.title {
+  margin: 110px auto 30px;
+  text-align: center;
+}
+
+.title p {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.about {
+  display: flex;
+  /* justify-content: space-between; */
+}
+
+.about h4 {
+  margin-bottom: 10px;
+  font-weight: 550;
+}
+
+.project-img img {
+  width: 690px;
+  margin-right: 50px;
+}
+
+.time h4 {
+  font-size: 22px;
+}
+
+.calendar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0 10px 0;
+  font-size: 20px;
+}
+
+.month {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+.skills {
+  display: grid;
+  grid-template-areas:
+    "reactjs javacsript"
+    "nodejs html";
+  grid-template-columns: 1fr;
+  font-size: 20px;
+}
+
+.skills-detail {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 30px 15px 0;
+}
+
+.bx {
+  font-size: 30px;
+}
+
+/* Text */
+.about-text {
+  text-align: justify;
+  margin-top: 30px;
+}

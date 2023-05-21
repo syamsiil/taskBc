@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="CSS/blog.css" />
+
+    <!-- Box Icons -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header>
+      <div class="header-left">
+        <a href="https://dumbways.id/fullstack" class="logo" target="_blank"
+          ><img src="assets/images/logo.png" alt=""
+        /></a>
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="header-contact">
+        <a href="contact.html" target="_blank">Contact Me</a>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Blog Start -->
+    <!-- Form -->
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="addBlog(event)">
+            <h1>Create Post Blog</h1>
+            <div>
+              <label for="input-blog-title">Title</label>
+              <input type="text" name="" id="input-blog-title" />
+            </div>
+            <div>
+              <label for="input-blog-content">Content</label>
+              <textarea
+                name=""
+                id="input-blog-content"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="input-blog-image-group">
+              <label for="upload-image">Upload Image</label>
+              <div>
+                <label for="input-blog-image">
+                  <p>Attach file</p>
+                  <img src="assets/images/logo.png" alt="" />
+                </label>
+                <input type="file" name="" id="input-blog-image" hidden />
+              </div>
+            </div>
+            <div class="button-group">
+              <button>Post blog</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <hr class="line" />
+
+      <!-- Blog-list -->
+      <div class="blog-list" id="contents">
+        <div class="blog-list-item">
+          <div class="blog-image">
+            <img src="assets/images/post-1.jpg" alt="image" />
+          </div>
+          <div class="blog-content">
+            <div class="btn-group">
+              <button class="btn-edit">Edit Post</button>
+              <button class="btn-delete">Delete Post</button>
+            </div>
+            <h1><a href="blog-detail.html" target="_blank">How Are You?</a></h1>
+            <div class="detail-blog-content">
+              12 July 2023 22:30 WIB | Syams
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatum, eveniet, deserunt facilis aut possimus eos velit hic
+              dignissimos reprehenderit est necessitatibus iusto quo, fugit eius
+              dolores sit officia. Suscipit, quidem?
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Blog End -->
+
+    <script src="JS/blog.js"></script>
+  </body>
+</html>
