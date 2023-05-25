@@ -71,17 +71,55 @@ header {
   padding: 10px 20px 10px 0;
 }
 
-.header-contact a {
+.header-right a {
   padding: 5px 20px;
   color: white;
   background-color: black;
   border-radius: 10px;
 }
 
-.header-contact a:hover {
+.header-right a:hover {
   color: white;
   background-color: orangered;
   transition: 0.5s;
+}
+
+/* menu bar */
+.hamburger-header-container {
+  margin-top: 70px;
+
+  list-style: none;
+  background-color: #9a9a9a;
+  padding: 10px;
+  display: none;
+  justify-content: center;
+  margin: 70px auto 0;
+}
+
+.hamburger-header-container a {
+  font-size: 15px;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 20px;
+}
+
+.hamburger-header-container .hamburger-active {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 25px;
+  border-radius: 20px;
+}
+
+#barsmenu {
+  display: none;
+  align-items: center;
 }
 
 /* Form  Add Project*/
@@ -390,4 +428,46 @@ footer p {
   text-align: center;
   color: white;
   font-size: 14px;
+}
+
+/* MAKING RESPONSIVE */
+@media only screen and (max-width: 900px) {
+  .card {
+    width: 100%;
+  }
+
+  .about {
+    justify-content: center;
+    /* text-align: center; */
+    margin: 0;
+    padding: 40px 20px 20px;
+  }
+
+  .home-text h1 {
+    text-align: center;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  section {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .item-collapse {
+    display: none;
+  }
+
+  #barsmenu {
+    display: block;
+  }
+}
+
+section {
+  margin-top: 80px;
 }

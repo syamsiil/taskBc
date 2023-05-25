@@ -23,22 +23,46 @@
           ><img src="assets/images/logo.png" alt=""
         /></a>
         <ul class="navbar">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="project.html" target="_blank">My Project</a></li>
+          <li class="item-collapse"><a href="#" class="active">Home</a></li>
+          <li class="item-collapse">
+            <a href="project.html" target="_blank">My Project</a>
+          </li>
         </ul>
       </div>
 
-      <div class="header-contact">
-        <a href="contact.html" target="_blank">Contact Me</a>
+      <div class="header-right">
+        <a href="contact.html" target="_blank" class="item-collapse"
+          >Contact Me</a
+        >
+      </div>
+      <div class="header-right" id="barsmenu">
+        <button
+          style="
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            color: black;
+            align-items: center;
+          "
+          onclick="openHamburger()"
+        >
+          <i class="bx bx-menu" style="align-items: center"></i>
+        </button>
       </div>
     </header>
     <!-- Header End -->
+
+    <div class="hamburger-header-container" id="hamburger-header-container">
+      <a href="index.html" class="hamburger-active">Home</a>
+      <a href="project.html">My Project</a>
+      <a href="contact.html">Contact</a>
+    </div>
 
     <!-- Home Start -->
     <section class="home">
       <div class="about">
         <div class="home-text">
-          <h1>Hi Welcome to my hut</h1>
+          <h1>Hi Welcome to my Project</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste
             corporis dolore, sunt nostrum, laboriosam sapiente quod consectetur
@@ -89,5 +113,8 @@
       <p>&#169; Seeus | All Right Reserved.</p>
     </footer>
     <!-- Footer End -->
+
+    <!-- Link To JS -->
+    <script src="JS/index.js"></script>
   </body>
 </html>
