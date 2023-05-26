@@ -60,17 +60,62 @@ header {
   padding: 10px 20px 10px 0;
 }
 
-.header-contact a {
+.header-right a {
   padding: 5px 20px;
   color: white;
   background-color: black;
   border-radius: 10px;
 }
 
-.header-contact a:hover {
+.header-right a:hover {
   color: white;
   background-color: orangered;
   transition: 0.5s;
+}
+
+/* menu bar */
+.hamburger-header-container {
+  margin-top: 70px;
+
+  list-style: none;
+  background-color: #9a9a9a;
+  padding: 10px;
+  display: none;
+  justify-content: center;
+  margin: 70px auto 0;
+}
+
+.hamburger-header-container a {
+  /* width: 150px; */
+  font-size: 15px;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 20px;
+}
+
+.hamburger-header-container .hamburger-active {
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 25px;
+  border-radius: 20px;
+}
+
+.hamburger-active a {
+  text-align: center;
+  justify-content: center;
+  padding-left: 100px;
+}
+
+#barsmenu {
+  display: none;
+  align-items: center;
 }
 
 /* Form */
@@ -147,4 +192,69 @@ footer p {
   text-align: center;
   color: white;
   font-size: 14px;
+}
+
+/* MAKING RESPONSIVE */
+@media only screen and (max-width: 800px) {
+  .heading {
+    margin-top: 0;
+  }
+
+  .input-image p {
+    font-size: 14px;
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .item-collapse {
+    display: none;
+  }
+
+  #barsmenu {
+    display: block;
+    background-color: coral;
+  }
+  section {
+    margin-top: 80px;
+  }
+
+  .input-image p {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  section {
+    margin-top: 80px;
+  }
+
+  .input-image p {
+    font-size: 14px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  form label {
+    font-size: 18px;
+  }
+  .form-title h1 {
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .form-date {
+    display: block;
+  }
+  footer {
+    display: none;
+  }
 }

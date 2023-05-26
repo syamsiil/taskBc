@@ -14,20 +14,44 @@
     <!-- Header Start -->
     <header>
       <div class="header-left">
-        <a href="https://dumbways.id/fullstackl" class="logo" target="_blank"
+        <a href="https://dumbways.id/fullstack" class="logo" target="_blank"
           ><img src="assets/images/logo.png" alt=""
         /></a>
         <ul class="navbar">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="project.html" target="_blank">My Project</a></li>
+          <li class="item-collapse"><a href="index.html">Home</a></li>
+          <li class="item-collapse">
+            <a href="project.html" target="_blank">My Project</a>
+          </li>
         </ul>
       </div>
 
-      <div class="header-contact">
-        <a href="#" class="active">Contact Me</a>
+      <div class="header-right">
+        <a href="#" class="item-collapse" class="active">Contact Me</a>
+      </div>
+      <div class="header-right" id="barsmenu">
+        <button
+          style="
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            color: black;
+            align-items: center;
+          "
+          onclick="openHamburger()"
+        >
+          <i class="bx bx-menu" style="align-items: center"></i>
+        </button>
       </div>
     </header>
     <!-- Header End -->
+    <!-- Hamburger Menu Start -->
+    <div class="hamburger-header-container" id="hamburger-header-container">
+      <a href="index.html">Home</a>
+      <a href="project.html">My Project</a>
+      <a href="contact.html" class="hamburger-active">Contact</a>
+    </div>
+    <!-- Hamburger Menu End -->
+
     <div class="form-title">
       <h1>GET IN TOUCH</h1>
     </div>
