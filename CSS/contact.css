@@ -213,6 +213,10 @@ footer p {
 }
 
 @media only screen and (max-width: 550px) {
+  section {
+    width: 80%;
+  }
+
   .item-collapse {
     display: none;
   }
@@ -221,9 +225,6 @@ footer p {
     display: block;
 
     color: black;
-  }
-  section {
-    margin-top: 80px;
   }
 
   .input-image p {

@@ -57,6 +57,29 @@ body {
   text-align: right;
 }
 
+.container-rating h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.rating button:hover {
+  border: none;
+}
+
+.container h1 {
+  font-size: 28px;
+}
+
+.container h1 span {
+  color: orangered;
+  font-size: 28px;
+}
+
+.container-rating h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
 @media only screen and (max-width: 900px) {
   .testimonial {
     width: 40%;
